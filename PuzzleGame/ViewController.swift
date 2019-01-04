@@ -41,8 +41,7 @@ class ViewController: UIViewController {
             puzzleView.addGestureRecognizer(UITapGestureRecognizer.init(target: self, action:#selector(click)))
         }
     }
-    //确定移动位置  控制器中添加并布局好9个PuzzleView，每个PuzzleView添加点击手势。
-    //每次移动时，通过这个PuzzleView 和点击的PuzzleView对比位置，相邻则可以移动。否则不做任何处理
+    
     
     func click(tap: UITapGestureRecognizer) {
         let puzzleView = tap.view as! PuzzleView
